@@ -1,0 +1,18 @@
+60dd0ee (HEAD -> master, origin/master, origin/develop, develop) HEAD@{0}: merge develop: Fast-forward
+1f25542 HEAD@{1}: checkout: moving from develop to master
+60dd0ee (HEAD -> master, origin/master, origin/develop, develop) HEAD@{2}: merge styles: Merge made by the 'recursive' strategy.
+864eb06 HEAD@{3}: merge images: Merge made by the 'recursive' strategy.
+dd5e3d8 HEAD@{4}: checkout: moving from images to develop
+d1fa8a4 (origin/images, images) HEAD@{5}: checkout: moving from develop to images
+dd5e3d8 HEAD@{6}: commit: change index.html add styles.css inside
+43a4f70 HEAD@{7}: checkout: moving from styles to develop
+b5573ad (origin/styles, styles) HEAD@{8}: commit: change styles.css
+451d758 HEAD@{9}: commit: add stylesFolder with styles.css inside
+43a4f70 HEAD@{10}: checkout: moving from develop to styles
+43a4f70 HEAD@{11}: commit: add images sourse in index.html
+ef41e3c HEAD@{12}: checkout: moving from images to develop
+d1fa8a4 (origin/images, images) HEAD@{13}: commit: add imagesFolder with some images
+ef41e3c HEAD@{14}: checkout: moving from develop to images
+ef41e3c HEAD@{15}: commit: add index.html in branch develop
+1f25542 HEAD@{16}: checkout: moving from master to develop
+1f25542 HEAD@{17}: commit (initial): add readme

@@ -28,4 +28,5 @@ styles source inside it. Commit.")
 ### DevOps
 
 __Я понимаю, что DevOps - это одно из направлений в ИТ, которое служит связующим звеном между всеми ветвями и стадиями разработки. Как пример, могу сопоставить эту специальность со специальностью прораба в строительстве. Он знает все технологии, управляет строительством, поясняет рабочим и мастерам, что необходимо делать. Контролирует качество и осуществляет связь между заказчиком, службой закупкии, исполнителями (субподрядчики) и т.д. А также всех рабочих обеспечивает как матералами, так и инструментом.__
+
 __I think DevOps its a one directions in IT, which serves as link between all branches and stages of develop. As an example, i can compare this speciality like chief in construction. He knows all technologies, controls quality, support and help all make his job.__

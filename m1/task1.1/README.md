@@ -14,7 +14,7 @@
 8. Add images source inside it. Commit. $ touch image1.jpg + $ git commit -m "comments"
 9. $ git checkout develop
 10. $ git checkout -b styles
-11. ![Add styles folder with styles source inside it. Commit.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/96846c2df19da4d16ae2171de3b2c28ebc78d920/m1/task1.1/imagesFolder/Screenshot_5.png "Add styles folder with 
+11. ![Add styles folder with styles source inside it. Commit.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/28c339e0ce2a628f63a0c8cc97bc7261a229ea8d/m1/task1.1/imagesFolder/Screenshot_5.png "Add styles folder with 
 styles source inside it. Commit.")
 12. Change index.html and $ git add index.html $ git commit -m "comments"
 13. $ git checkout develop

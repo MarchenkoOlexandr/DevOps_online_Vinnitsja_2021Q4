@@ -39,5 +39,5 @@
 
 3. ![Stop and delete VM](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/1e7b5dbe11a563979054f29e4e7e020dd5adcd1b/m1/task2.1/Screenshot_19.png "Stop and delete VM")
 
-4. ![Create my own Vagrant box VM](https://20 "Create my own Vagrant box VM")
+4. ![Create my own Vagrant box VM](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/51aac5dff05bc580929bb41d11a1a424fbe91588/m1/task2.1/Screenshot_20.png "Create my own Vagrant box VM")
  

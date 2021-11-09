@@ -13,7 +13,7 @@
 
 ### PART 2. WORK WITH VIRTUALBOX
 
-1. ![Download VirtualBox, install then create VM1, rename VM1. Set machine name as "host machine name"_"student last name". Install Ubuntu. Clone an existing VM1](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/1e7b5dbe11a563979054f29e4e7e020dd5adcd1b/m1/task2.1/Screenshot_8.png "Download VirtualBox, install then create VM1, rename VM1. Set machine name as "host machine name"_"student last name". Install Ubuntu. Clone an existing VM1")
+1. ![Download VirtualBox, install then create VM1, rename VM1. Set machine name as "host machine name"_"student last name". Install Ubuntu. Clone an existing VM1](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/8194d4a085d9e631621dfd52436a2978073a9aac/m1/task2.1/Screenshot_8.png "Download VirtualBox, install then create VM1, rename VM1. Set machine name as "host machine name"_"student last name". Install Ubuntu. Clone an existing VM1")
 
 2. ![Download VirtualBox, install then create VM1, rename VM1. Set machine name as "host machine name"_"student last name". Install Ubuntu. Clone an existing VM1](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/1e7b5dbe11a563979054f29e4e7e020dd5adcd1b/m1/task2.1/Screenshot_9.png "Download VirtualBox, install then create VM1, rename VM1. Set machine name as "host machine name"_"student last name". Install Ubuntu. Clone an existing VM1")
 

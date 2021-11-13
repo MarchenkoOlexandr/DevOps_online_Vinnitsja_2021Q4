@@ -37,7 +37,7 @@
 
 13-15. ![Create a static website on Amazon S3,](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/79b32d7ad2c7bec1d1ad29d0cde8c9dae4ba0115/m1/task2.2/Screenshot_20.png "Launch another Linux Virtual Machine without Amazon")
 
-
+  <p>website <a href="http://prostoclick.click/">prostoclick.click</a></p>
 
 
 

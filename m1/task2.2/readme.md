@@ -13,8 +13,8 @@
 
 6. ![Create a snapshot of your instance to keep as a backup.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/79b32d7ad2c7bec1d1ad29d0cde8c9dae4ba0115/m1/task2.2/Screenshot_5.png "Create a snapshot of your instance to keep as a backup.")
 
-7. ![Create and attach a Disk_D (EBS) to your instance to add more storage space. Create and save some file on Disk_D](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/79b32d7ad2c7bec1d1ad29d0cde8c9dae4ba0115/m1/task2.2/Screenshot_6.png "Create a snapshot of your instance to keep as a backup.")
-   ![Create and attach a Disk_D (EBS) to your instance to add more storage space. Create and save some file on Disk_D](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/79b32d7ad2c7bec1d1ad29d0cde8c9dae4ba0115/m1/task2.2/Screenshot_8.png "Create a snapshot of your instance to keep as a backup.")
+7. ![Create and attach a Disk_D (EBS) to your instance to add more storage space. Create and save some file on Disk_D](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/79b32d7ad2c7bec1d1ad29d0cde8c9dae4ba0115/m1/task2.2/Screenshot_6.png "Create and attach a Disk_D (EBS) to your instance to add more storage space. Create and save some file on Disk_D")
+   ![Create and attach a Disk_D (EBS) to your instance to add more storage space. Create and save some file on Disk_D](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/79b32d7ad2c7bec1d1ad29d0cde8c9dae4ba0115/m1/task2.2/Screenshot_8.png "Create and attach a Disk_D (EBS) to your instance to add more storage space. Create and save some file on Disk_D")
 
 8. ![Launch the third instance from backup](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/79b32d7ad2c7bec1d1ad29d0cde8c9dae4ba0115/m1/task2.2/Screenshot_9.png "Launch the third instance from backup")
    ![Launch the third instance from backup](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/79b32d7ad2c7bec1d1ad29d0cde8c9dae4ba0115/m1/task2.2/Screenshot_10.png "Launch the third instance from backup")

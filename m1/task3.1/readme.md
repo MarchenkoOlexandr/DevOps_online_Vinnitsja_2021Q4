@@ -34,7 +34,7 @@ look task3.1.pkt file
 
 8. ![p.2 customize Home Router](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/5e4184e193c07a82137437e909cb00bf3d5cc838/m1/task3.1/Screenshot_14.png "p.2 customize Home Router")
 
-9. ![p.3 control all network with ping and tracert]( https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/5e4184e193c07a82137437e909cb00bf3d5cc838/m1/task3.1/Screenshot_15.png" p.3 control all network with ping and tracert")
+9. ![p.3 control all network with ping and tracert]( https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/5e4184e193c07a82137437e909cb00bf3d5cc838/m1/task3.1/Screenshot_15.png "p.3 control all network with ping and tracert")
 
 look task3.2.pkt file
 

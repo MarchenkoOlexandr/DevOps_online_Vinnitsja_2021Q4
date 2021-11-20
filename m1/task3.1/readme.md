@@ -2,7 +2,7 @@
 # DevOps education program
 ## Module –Networking Fundamentals
 ## TASK 3 
-### Task 3.1
+## Task 3.1
 
 1. ![p.1-3 Create Network, for Enterprise make Client 1- 10.75.28.10/24 and Client 2- 10.75.28.20/24 and DHCP Server - 10.75.28.100/24 *, ping](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/5e4184e193c07a82137437e909cb00bf3d5cc838/m1/task3.1/Screenshot_1.png "p.1-3 Create Network, for Enterprise make Client 1- 10.75.28.10/24 and Client 2- 10.75.28.20/24 and DHCP Server - 10.75.28.100/24 *, ping ")
    ![p.1-3 Create Network, for Enterprise make Client 1- 10.75.28.10/24 and Client 2- 10.75.28.20/24 and DHCP Server - 10.75.28.100/24 *, ping](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/5e4184e193c07a82137437e909cb00bf3d5cc838/m1/task3.1/Screenshot_2.png "p.1-3 Create Network, for Enterprise make Client 1- 10.75.28.10/24 and Client 2- 10.75.28.20/24 and DHCP Server - 10.75.28.100/24 *, ping ")

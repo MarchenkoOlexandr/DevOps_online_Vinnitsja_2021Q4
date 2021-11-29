@@ -60,6 +60,7 @@
 **mysql>SELECT * FROM Student WHERE LastName='Marchenko';**
 	
 **mysql>SELECT * FROM Lecture WHERE Lecture_Id > 3 ORDER BY Lecture_Id;**
+
 	
 7. Execute other different SQL queries DDL, DML, DCL.
 	![](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/3ec94dda364a7cdcc47ab25cd643249dcab28aac/m1/task4.1/Screenshot_9.png "Execute other different SQL queries DDL, DML, DCL.")
@@ -97,25 +98,26 @@
 **mysql>UPDATE Student SET Task_Id = 1.1 WHERE FirstName = 'Nataly';**
 	
 **mysql>DELETE FROM Student WHERE FirstName = 'Vitaly';**
+
 	
 8. Create a database of new users with different privileges. Connect to the database as a new user and verify that the privileges allow or deny certain actions.
 	![Create a database of new users with different privileges. Connect to the database as a new user and verify that the privileges allow or deny certain actions.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/3ec94dda364a7cdcc47ab25cd643249dcab28aac/m1/task4.1/Screenshot_10.png "Create a database of new users with different privileges. Connect to the database as a new user and verify that the privileges allow or deny certain actions.")
 	
-**mysql>CREATE USER 'TEST'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';**
+**mysql>CREATE USER 'TEST'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 	
-**mysql>SELECT USER from mysql.user;**
+mysql>SELECT USER from mysql.user;
 	
-**mysql>CREATE DATABASE testDB;**
+mysql>CREATE DATABASE testDB;
 	
-**mysql>GRANT ALL PRIVILEGES ON testDB.* TO 'TEST'@'localhost';**
+mysql>GRANT ALL PRIVILEGES ON testDB.* TO 'TEST'@'localhost';
 	
-**mysql>GRANT CREATE,SELECT,UPDATE,DELETE ON testDB.* TO 'TEST'@'localhost';**
+mysql>GRANT CREATE,SELECT,UPDATE,DELETE ON testDB.* TO 'TEST'@'localhost';
 	
-**mysql>FLUSH PRIVILEGES;**
+mysql>FLUSH PRIVILEGES;
 	
-**mysql>mysql -u TEST testDB -p;**
+mysql>mysql -u TEST testDB -p;
 	
-**mysql>CREATE TABLE Testtables (nomer_Id INT, Kurs FLOAT, Price FLOAT, Tovar VARCHAR(100));**
+mysql>CREATE TABLE Testtables (nomer_Id INT, Kurs FLOAT, Price FLOAT, Tovar VARCHAR(100));**
 	
 9. Make a selection from the main table DB MySQL.
 	![Make a selection from the main table DB MySQL.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/3ec94dda364a7cdcc47ab25cd643249dcab28aac/m1/task4.1/Screenshot_11.png "Make a selection from the main table DB MySQL.")

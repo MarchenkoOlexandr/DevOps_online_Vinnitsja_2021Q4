@@ -41,7 +41,7 @@
 	
 	**mysql>INSERT INTO Task VALUES ('2.1','2.1','2021-11-10');**
 	
-	**mysql>INSERT INTO Task VALUES ('2.1','2.2','2021-11-15'); **
+	**mysql>INSERT INTO Task VALUES ('2.1','2.2','2021-11-15');**
 	
 	**mysql>INSERT INTO Task VALUES ('3.1','3.1','2021-11-30');**
 
@@ -65,7 +65,7 @@
 7. Execute other different SQL queries DDL, DML, DCL.
 	![](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/3ec94dda364a7cdcc47ab25cd643249dcab28aac/m1/task4.1/Screenshot_9.png "Execute other different SQL queries DDL, DML, DCL.")
 	
-	**mysql>ALTER TABLE Lecture MODIFY Lecture_Id FLOAT NOT NULL;
+	**mysql>ALTER TABLE Lecture MODIFY Lecture_Id FLOAT NOT NULL;**
 
 	**mysql>UPDATE Lecture SET Lecture_Id = 1.1 WHERE Theme_Lecture = 'DevOps Introduction';**
 	
@@ -109,9 +109,9 @@
 	
 	**mysql>CREATE DATABASE testDB;**
 	
-	**mysql>GRANT ALL PRIVILEGES ON testDB.* TO 'TEST'@'localhost';**
+	**mysql>GRANT ALL PRIVILEGES ON testDB.* TO 'TEST'@'localhost';***
 	
-	**mysql>GRANT CREATE,SELECT,UPDATE,DELETE ON testDB.* TO 'TEST'@'localhost';**
+	**mysql>GRANT CREATE,SELECT,UPDATE,DELETE ON testDB.* TO 'TEST'@'localhost';***
 	
 	**mysql>FLUSH PRIVILEGES;**
 	
@@ -165,7 +165,7 @@
 16. Create the dump of your database.
 	![Create the dump of your database.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/3ec94dda364a7cdcc47ab25cd643249dcab28aac/m1/task4.1/Screenshot_18.png "Create the dump of your database.")
 
-	**mysqldump -u MarchenkoDBadmin -h marchenkodb1.ckmimxnn7b4c.eu-central-1.rds.amazonaws.com -pVika123! MarchenkoRDS > MarchenkoRDS.sql;**
+	**mysqldump -u MarchenkoDBadmin -h marchenkodb1.ckmimxnn7b4c.eu-central-1.rds.amazonaws.com -p MarchenkoRDS > MarchenkoRDS.sql;**
 
 ## PART 3
 

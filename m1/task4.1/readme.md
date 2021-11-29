@@ -109,9 +109,9 @@
 	
 	**mysql>CREATE DATABASE testDB;**
 	
-	**mysql>GRANT ALL PRIVILEGES ON testDB.* TO 'TEST'@'localhost';***
+	**mysql>GRANT ALL PRIVILEGES ON testDB.zvezda TO 'TEST'@'localhost';**
 	
-	**mysql>GRANT CREATE,SELECT,UPDATE,DELETE ON testDB.* TO 'TEST'@'localhost';***
+	**mysql>GRANT CREATE,SELECT,UPDATE,DELETE ON testDB.zvezda TO 'TEST'@'localhost';**
 	
 	**mysql>FLUSH PRIVILEGES;**
 	
@@ -136,7 +136,6 @@
 	**mysql>DROP TABLE Task;**
 
 12. Restore your database.
-	![Restore your database.](https "Restore your database.")
 
 	**mysql -u MarchenkoDBadmin -p MarchenkoDB < MarchenkoDB-dump.sql;**
 
@@ -153,14 +152,14 @@
 	
 	**mysql -u MarchenkoDBadmin -h marchenkodb1.ckmimxnn7b4c.eu-central-1.rds.amazonaws.com -p!**
 	
-	**mysql -u MarchenkoDBadmin -pVika123! -h marchenkodb1.ckmimxnn7b4c.eu-central-1.rds.amazonaws.com MarchenkoRDS < MarchenkoDB-dump.sql**
+	**mysql -u MarchenkoDBadmin -p -h marchenkodb1.ckmimxnn7b4c.eu-central-1.rds.amazonaws.com MarchenkoRDS < MarchenkoDB-dump.sql**
 
 
 14. Connect to your database.
 	![Connect to your database.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/3ec94dda364a7cdcc47ab25cd643249dcab28aac/m1/task4.1/Screenshot_16.png "Connect to your database.")
 
 15. Execute SELECT operator.
-	![Execute SELECT operator.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/3ec94dda364a7cdcc47ab25cd643249dcab28aac/m1/task4.1/Screenshot_17.png "Execute SELECT operator.")
+	![Execute SELECT operator.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/b710d78f70e6c79968f43c819721ee05b25bfe32/m1/task4.1/Screenshot_17.png "Execute SELECT operator.")
 
 16. Create the dump of your database.
 	![Create the dump of your database.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/3ec94dda364a7cdcc47ab25cd643249dcab28aac/m1/task4.1/Screenshot_18.png "Create the dump of your database.")

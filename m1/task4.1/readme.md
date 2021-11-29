@@ -20,6 +20,7 @@
 	
 5. Fill in tables.
 	![Fill in tables.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/3ec94dda364a7cdcc47ab25cd643249dcab28aac/m1/task4.1/Screenshot_5.png "Fill in tables.")
+
 **mysql>CREATE TABLE Lecture (Lecture_Id INT, Theme_Lecture VARCHAR(100));**
 	
 **mysql>CREATE TABLE Task (Lecture_Id INT, Task_Id INT, Deadline Date);**
@@ -75,7 +76,6 @@
 	
 **mysql>UPDATE Lecture SET Lecture_Id = 4.1 WHERE Theme_Lecture = 'Linux Essentials';**
 	
-
 **mysql>ALTER TABLE Task MODIFY Lecture_Id FLOAT NOT NULL;**
 	
 **mysql>ALTER TABLE Task MODIFY Task_Id FLOAT NOT NULL;**
@@ -115,7 +115,7 @@
 	
 **mysql>mysql -u TEST testDB -p;**
 	
-**mysql>CREATE TABLE Testtables (nomer_Id INT, Kurs FLOAT, Price FLOAT, Tovar VARCHAR(100));	**
+**mysql>CREATE TABLE Testtables (nomer_Id INT, Kurs FLOAT, Price FLOAT, Tovar VARCHAR(100));**
 	
 9. Make a selection from the main table DB MySQL.
 	![Make a selection from the main table DB MySQL.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/3ec94dda364a7cdcc47ab25cd643249dcab28aac/m1/task4.1/Screenshot_11.png "Make a selection from the main table DB MySQL.")

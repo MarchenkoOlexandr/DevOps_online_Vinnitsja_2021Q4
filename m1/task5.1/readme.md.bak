@@ -2,19 +2,19 @@
 
 1. Log in to the system as root.
 	
-**sudo su**
+	**sudo su**
 
 	![Log in to the system as root.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/c1569439cc97145faa30e918041693616fb3ce40/m1/task5.1/Screenshot_1.png "Log in to the system as root.")
 
 2. Use the passwd command to change the password. Examine the basic parameters of the command. What system file does it change?
 		
-**passwd - changed password for current user**
+	**passwd - changed password for current user**
 
-**sudo passwd - changed password for any users**
+	**sudo passwd - changed password for any users**
 
-**man passwd - we can read all parameters of this command**
+	**man passwd - we can read all parameters of this command**
 
-**whith this command passwd - we can manipulation with password for users - change, delete, set expiration and see status**
+	**whith this command passwd - we can manipulation with password for users - change, delete, set expiration and see status**
 
 	![passwd - changed password for current user](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/c1569439cc97145faa30e918041693616fb3ce40/m1/task5.1/Screenshot_2.png "passwd - changed password for current user")
 	

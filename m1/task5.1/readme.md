@@ -107,7 +107,7 @@
 	
 	**in this command -a do not ignore entries starting with . + -l use a long listing format + -h human-readable + --group-directories-first  group directories before files**
 	
-``	**ls -l  use a long listing format  ls -a do not ignore entries starting with .**
+	**ls -l  use a long listing format  ls -a do not ignore entries starting with .**
 
 	![ls command](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/c1569439cc97145faa30e918041693616fb3ce40/m1/task5.1/Screenshot_20.png "ls command")
 	
@@ -239,7 +239,7 @@ located in the root directory (using I/O redirection operations);
 	
 	**ls -lha /dev**
 	
-	**In Linux all it's files. But in Linux devices with 'c' - symbol device, 'b' - block device (hard disk for example), 'd' - directory, '-' - simple files. 
+	**In Linux all it's files. But in Linux devices with 'c' - symbol device, 'b' - block device (hard disk for example), 'd' - directory, '-' - simple files.**
 
 14. How to determine the type of file in the system, what types of files are there?
 

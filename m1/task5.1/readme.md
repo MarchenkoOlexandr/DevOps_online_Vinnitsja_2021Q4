@@ -250,6 +250,9 @@ located in the root directory (using I/O redirection operations);
 15. List the first 5 directory files that were recently accessed in the /etc directory.
 	
 	**ls /etc -alur | grep ^- | tail -n 5**
+	
+	**or**
+	
 	**ls /etc -alu | grep ^- | head -n 5**
 
 	![List the first 5 directory files that were recently accessed in the /etc directory.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/c1569439cc97145faa30e918041693616fb3ce40/m1/task5.1/Screenshot_34.png "List the first 5 directory files that were recently accessed in the /etc directory.")

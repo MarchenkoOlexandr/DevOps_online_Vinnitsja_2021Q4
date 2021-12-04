@@ -10,11 +10,11 @@
 	
 	**in system next users: root user, real users, pseudo or system users only for own process(daemon, syslog, proxy, tspdump, etc) Define pseudo-users - nologin**
 	
-	![Analyze the structure of the /etc/passwd](https1 "Analyze the structure of the /etc/passwd")
+	![Analyze the structure of the /etc/passwd](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7f904cddf5b83285cc74903cffe7a395c2ea6897/m1/task5.2/Screenshot_1.png "Analyze the structure of the /etc/passwd")
 	
 	**in file group next fields: group name, password, group id, list with users belonging in this group**
 	
-	![Analyze the structure of the //etc/group](https2 "Analyze the structure of the /etc/group")	
+	![Analyze the structure of the //etc/group](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7f904cddf5b83285cc74903cffe7a395c2ea6897/m1/task5.2/Screenshot_2.png "Analyze the structure of the /etc/group")	
 
 2) What are the uid ranges? What is UID? How to define it?
 
@@ -30,33 +30,33 @@
 	
 	**if need determine belonging of one user to the specific group use command: id -G user_name, groups user_name, id -nG user_name**
 	
-	![How to determine belonging of user to the specific group](https3 "How to determine belonging of user to the specific group")
+	![How to determine belonging of user to the specific group](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7f904cddf5b83285cc74903cffe7a395c2ea6897/m1/task5.2/Screenshot_3.png "How to determine belonging of user to the specific group")
 
 5) What are the commands for adding a user to the system? What are the basic parameters required to create a user?
 
 	**useradd or adduser. When we use adduser basic parameters next:user_name, password, etc**
 	
-	![adduser](https4 "adduser")
+	![adduser](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7f904cddf5b83285cc74903cffe7a395c2ea6897/m1/task5.2/Screenshot_4.png "adduser")
 
 6) How do I change the name (account name) of an existing user?
 
 	**use usermod user_name. For example i changed user name olmar on olmarch and than print list members from group olmar**
 	
-	![change the name (account name) of an existing user](https5 "change the name (account name) of an existing user")
+	![change the name (account name) of an existing user](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7f904cddf5b83285cc74903cffe7a395c2ea6897/m1/task5.2/Screenshot_5.png "change the name (account name) of an existing user")
 	
-	![print list members from group olmar](https6 "print list members from group olmar")
+	![print list members from group olmar](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7f904cddf5b83285cc74903cffe7a395c2ea6897/m1/task5.2/Screenshot_6.png "print list members from group olmar")
 
 7) What is skell_dir? What is its structure?
 
 	**For run home catalog when create new user. For list structure used command: ls -lart /etc/skel**
 	
-	![skell_dir](https7 "skell_dir")
+	![skell_dir](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7f904cddf5b83285cc74903cffe7a395c2ea6897/m1/task5.2/Screenshot_7.png "skell_dir")
 
 8) How to remove a user from the system (including his mailbox)?
 
 	**For remove a user from the system I used command:sudo userdel -r (including his mailbox) or sudo deluser --remove-home olmarch**
 	
-	![remove a user from the system](https8 "remove a user from the system")
+	![remove a user from the system](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7f904cddf5b83285cc74903cffe7a395c2ea6897/m1/task5.2/Screenshot_8.png "remove a user from the system")
 
 9) What commands and keys should be used to lock and unlock a user account?
 
@@ -70,7 +70,7 @@
 
 	**ls -lahi**
 	
-	![Display the extended format of information about the directory](https9 "Display the extended format of information about the directory")
+	![Display the extended format of information about the directory](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7f904cddf5b83285cc74903cffe7a395c2ea6897/m1/task5.2/Screenshot_9.png "Display the extended format of information about the directory")
 
 12) What access rights exist and for whom (i. e., describe the main roles)? Briefly describe the acronym for access rights.
 
@@ -94,7 +94,7 @@
 	
 	**chmod ugo+rwx example.txt**
 	
-	![examples](https10 "examples")
+	![examples](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7f904cddf5b83285cc74903cffe7a395c2ea6897/m1/task5.2/Screenshot_10.png "examples")
 	
 15) What is an example of octal representation of access rights? Describe the umask command.
 

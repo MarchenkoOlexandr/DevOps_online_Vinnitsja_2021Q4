@@ -95,16 +95,27 @@
 	![information does top command display](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_8.png "information does top command display")
 	
 	** PID     = Process Id**
+	
 	** USER    = Effective User Name**
+	
 	** PR      = Priority**
+	
 	** NI      = Nice Value**
+	
 	** VIRT    = Virtual Image (KiB)**
+	
 	** RES     = Resident Size (KiB)**
+	
 	** SHR     = Shared Memory (KiB)**  
+	
 	** S       = Process Status** 
+	
 	** %CPU    = CPU Usage**
+	
 	** %MEM    = Memory Usage (RES)**
+	
 	** TIME+   = CPU Time, hundredths**  
+	
 	** COMMAND = Command Name/Line**
 
 12. Display the processes of the specific user using the top command.

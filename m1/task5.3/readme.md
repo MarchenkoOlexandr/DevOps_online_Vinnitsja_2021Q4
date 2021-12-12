@@ -22,7 +22,7 @@
 
 	**For output (highlight) the chain (ancestors) of the current process I used command: pstree -hp (p - for output PID)**
 
-	![For output (highlight) the chain (ancestors) of the current process I used command: pstree -hp](https1 "For output (highlight) the chain (ancestors) of the current process I used command: pstree -hp")
+	![For output (highlight) the chain (ancestors) of the current process I used command: pstree -hp](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_1.png "For output (highlight) the chain (ancestors) of the current process I used command: pstree -hp")
 
 3. What is a proc file system?
 
@@ -34,13 +34,13 @@
 
 	**cat /proc/cpuinfo**
 
-	![cpuinfo](https2 "cpuinfo")
+	![cpuinfo](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_2.png "cpuinfo")
 
 5. Use the ps command to get information about the process. The information should be as follows: the owner of the process, the arguments with which the process was launched for execution, the group owner of this process, etc.
 
 	**ps -o user,args,group,pid,pcpu,pmem,comm,cputime,gid,lwp,rss,start,vsize,priority.  For seeing all arguments used command: ps L**
 
-	![Use the ps command to get information about the process](https3 "Use the ps command to get information about the process")
+	![Use the ps command to get information about the process](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_3.png "Use the ps command to get information about the process")
 
 6. How to define kernel processes and user processes?
 
@@ -72,27 +72,27 @@
 	
 	**X dead (should never be seen)**
 	
-	![Briefly describe the statuses of the processes](https4 "Briefly describe the statuses of the processes")
+	![Briefly describe the statuses of the processes](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_4.png "Briefly describe the statuses of the processes")
 
 8. Display only the processes of a specific user.
 
 	**ps -u whoopsie or ps -u whoopsie -o user,pid,ppid,args,s**
 
-	![Display only the processes of a specific user](https5 "Display only the processes of a specific user")
+	![Display only the processes of a specific user](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_5.png "Display only the processes of a specific user")
 
 9. What utilities can be used to analyze existing running tasks (by analyzing the help for the ps command)?
 
 	**pgrep, pstree, top, proc**
 
-	![utilities can be used to analyze existing running tasks](https6 "utilities can be used to analyze existing running tasks")
+	![utilities can be used to analyze existing running tasks](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_6.png "utilities can be used to analyze existing running tasks")
 
 10. What information does top command display?
 
-	![information does top command display](https7 "information does top command display")
+	![information does top command display](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_7.png "information does top command display")
 	
 	**for seeing info about information does top command display enter F**
 
-	![information does top command display](https8 "information does top command display")
+	![information does top command display](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_8.png "information does top command display")
 	
 	** PID     = Process Id**
 	** USER    = Effective User Name**
@@ -111,7 +111,7 @@
 
 	**top -u legion(user_name)**
 
-	![Display the processes of the specific user using the top command](https9 "Display the processes of the specific user using the top command")
+	![Display the processes of the specific user using the top command](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_9.png "Display the processes of the specific user using the top command")
 
 12. What interactive commands can be used to control the top command? Give a couple of examples.
 
@@ -127,7 +127,7 @@
 
 	**run top and shift-n sort by pid, shift-m sort by %memory, shift-t sort time work process**
 
-	![Sort the contents of the processes window using various parameters](https10 "Sort the contents of the processes window using various parameters")
+	![Sort the contents of the processes window using various parameters](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_10.png "Sort the contents of the processes window using various parameters")
 
 14. Concept of priority, what commands are used to set priority?
 
@@ -143,7 +143,7 @@
 
 	**I can change the priority of a process using the top command with r, then enter PID and new priority.**
 	
-	![I can change the priority of a process using the top command with r](https11 "I can change the priority of a process using the top command with r")
+	![I can change the priority of a process using the top command with r](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_11.png "I can change the priority of a process using the top command with r")
 
 16. Examine the kill command. How to send with the kill command process control signal? Give an example of commonly used signals.
 
@@ -153,7 +153,7 @@
 	
 	**SIGTERM - kill process default, SIGKILL - kill process immediately, SIGSTOP - pause, SIGCONT - continue, xkill - grafkill **
 
-	![list killsignals kill L](https12 "list killsignals kill L")
+	![list killsignals kill L](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_12.png "list killsignals kill L")
 	
 
 17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to demonstrate the process control mechanism with fg, bg. 
@@ -166,7 +166,7 @@
 	
 	**nohup - no hang up Process will be working when user out of session**
 	
-	![Use the sleep, yes command to demonstrate the process control mechanism with fg, bg](https13 "Use the sleep, yes command to demonstrate the process control mechanism with fg, bg")
+	![Use the sleep, yes command to demonstrate the process control mechanism with fg, bg](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_13.png "Use the sleep, yes command to demonstrate the process control mechanism with fg, bg")
 
 ## Part2
 
@@ -180,9 +180,9 @@
 	
 	**ssh-keygen -t keytype - generated key for authentication. I used only ssh-keygen in screenshot**
 
-	![screenshots: command – result](https14 "screenshots: command – result")
+	![screenshots: command – result](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_14.png "screenshots: command – result")
 	
-	![screenshots: command – result](https15 "screenshots: command – result")
+	![screenshots: command – result](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_15.png "screenshots: command – result")
 		
 2. Implement basic SSH settings to increase the security of the client-server connection (at least
 
@@ -216,11 +216,11 @@
 
 	**dsa ecdsa ecdsa-ck ed25519 ed25519-ck rsa **
 	
-	![dsa ecdsa ed25519 rsa](https16 "dsa ecdsa ed25519 rsa")
+	![dsa ecdsa ed25519 rsa](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_16.png "dsa ecdsa ed25519 rsa")
 	
 	**ssh-keygen -t type_key (ssh-keygen -t rsa ssh-keygen -t dsa ssh-keygen -t ecdsa**
 
-	![ssh-keygen -t type_key](https17 "ssh-keygen -t type_key")
+	![ssh-keygen -t type_key](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_17.png "ssh-keygen -t type_key")
 
 4. Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT.
 
@@ -228,12 +228,14 @@
 	
 	**In VM Linux sudo apt install openssh-server, In Windows ssh legion@localhost -p 2222**
 	
-	![Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT](https18 "Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT")
+	![Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_18.png "Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT")
 
 5*. Intercept (capture) traffic (tcpdump, wireshark) while authorizing the remote client on the server using ssh, telnet, rlogin. Analyze the result.
 
 	**for use warshark first: sudo apt install wireshark than sudo usermod -aG wireshark $USER, sudo wireshark**
 
-	![Analyze the result](https19 "Analyze the result")
+	![Analyze the result](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_19.png "Analyze the result")
 	
 	**if use tcpdump next command: sudo tcpdump -vv -i any -nn port 23 -w dump23.pcap and sudo tcpdump -vv -i any -nn port 22 -w dump22.pcap**
+	
+	**ssh all encrypted pakets, telnet not encrypted**

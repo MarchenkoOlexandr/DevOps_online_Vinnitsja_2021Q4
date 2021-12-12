@@ -56,7 +56,7 @@
 	
 	**In Linux if process exist, his possible states next:**
 
-	**+R running or runnable **
+	**+R running or runnable**
 	
 	**+D uninterruptible sleep (usually IO)**
 	
@@ -162,7 +162,7 @@
 	
 	**killall -u username,  kill -3 PID quit process, killall name_process**
 	
-	**SIGTERM - kill process default, SIGKILL - kill process immediately, SIGSTOP - pause, SIGCONT - continue, xkill - grafkill **
+	**SIGTERM - kill process default, SIGKILL - kill process immediately, SIGSTOP - pause, SIGCONT - continue, xkill - grafkill**
 
 	![list killsignals kill L](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_12.png "list killsignals kill L")
 	
@@ -241,7 +241,7 @@
 	
 	![Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/7901fe41aa1082a052d1743843b7918215edfba2/m1/task5.3/Screenshot_18.png "Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT")
 
-5*. Intercept (capture) traffic (tcpdump, wireshark) while authorizing the remote client on the server using ssh, telnet, rlogin. Analyze the result.
+5. Intercept (capture) traffic (tcpdump, wireshark) while authorizing the remote client on the server using ssh, telnet, rlogin. Analyze the result.
 
 	**for use warshark first: sudo apt install wireshark than sudo usermod -aG wireshark $USER, sudo wireshark**
 

@@ -58,46 +58,48 @@
 	
 **sudo apt install net-tools**
 	
-![Configure all network interfaces](https1 "Configure all network interfaces")
-
 3. Check the route from VM2 to Host.
 
 ****
-****
 
-![Check the route from VM2 to Host](https1 "Check the route from VM2 to Host")
+**traceroute 192.168.0.102 - it is host ip**
+
+![Check the route from VM2 to Host](https2 "Check the route from VM2 to Host")
 
 4. Check the access to the Internet, (just ping, for example, 8.8.8.8).
 
 ****
-****
 
-![Check the access to the Internet](https1 "Check the access to the Internet")
+![Check the access to the Internet](https3 "Check the access to the Internet")
 
 5. Determine, which resource has an IP address 8.8.8.8.
 
 ****
-****
 
-![Determine, which resource has an IP address 8.8.8.8.](https1 "Determine, which resource has an IP address 8.8.8.8.")
+**sudo apt install whois and than whois 8.8.8.8 or resolvectl query 8.8.8.8**
+
+![Determine, which resource has an IP address 8.8.8.8.](https4 "Determine, which resource has an IP address 8.8.8.8.")
 
 6. Determine, which IP address belongs to resource epam.com.
 
 ****
-****
 
-![Determine, which IP address belongs to resource epam.com](https1 "Determine, which IP address belongs to resource epam.com")
+**resolvectl query epam.com or dig epam.com**
+
+![Determine, which IP address belongs to resource epam.com](https5 "Determine, which IP address belongs to resource epam.com")
 
 7. Determine the default gateway for your HOST and display routing table.
 
 ****
-****
 
-![Determine the default gateway for your HOST and display routing table](https1 "Determine the default gateway for your HOST and display routing table")
+**My host it is a machine with Windows and i used command: route print** 
+
+![Determine the default gateway for your HOST and display routing table](https6 "Determine the default gateway for your HOST and display routing table")
 
 8. Trace the route to google.com.
 
 ****
-****
 
-![Trace the route to google.com](https1 "Trace the route to google.com")
+**traceroute -I google.com Explaination: when i use only traceroute most line is empry for traceroute with icmp packets i used -I**
+
+![Trace the route to google.com](https7 "Trace the route to google.com")

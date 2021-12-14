@@ -4,7 +4,7 @@
 
 ****
 
-![Create virtual machines connection according to figure 1](https1 "Create virtual machines connection according to figure 1")
+![Create virtual machines connection according to figure 1](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e7b6c8fd0430685d78eae5c9252ab597490bbeb/m1/task6.1/Screenshot_1.png "Create virtual machines connection according to figure 1")
 	
 2. VM2 has one interface (internal), VM1 has 2 interfaces (NAT and internal). Configure all network interfaces in order to make VM2 has an access to the Internet (iptables, forward, masquerade).
 ****
@@ -64,13 +64,13 @@
 
 **traceroute 192.168.0.102 - it is host ip**
 
-![Check the route from VM2 to Host](https2 "Check the route from VM2 to Host")
+![Check the route from VM2 to Host](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e7b6c8fd0430685d78eae5c9252ab597490bbeb/m1/task6.1/Screenshot_2.png "Check the route from VM2 to Host")
 
 4. Check the access to the Internet, (just ping, for example, 8.8.8.8).
 
 ****
 
-![Check the access to the Internet](https3 "Check the access to the Internet")
+![Check the access to the Internet](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e7b6c8fd0430685d78eae5c9252ab597490bbeb/m1/task6.1/Screenshot_3.png "Check the access to the Internet")
 
 5. Determine, which resource has an IP address 8.8.8.8.
 
@@ -78,7 +78,7 @@
 
 **sudo apt install whois and than whois 8.8.8.8 or resolvectl query 8.8.8.8**
 
-![Determine, which resource has an IP address 8.8.8.8.](https4 "Determine, which resource has an IP address 8.8.8.8.")
+![Determine, which resource has an IP address 8.8.8.8.](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e7b6c8fd0430685d78eae5c9252ab597490bbeb/m1/task6.1/Screenshot_4.png "Determine, which resource has an IP address 8.8.8.8.")
 
 6. Determine, which IP address belongs to resource epam.com.
 
@@ -86,7 +86,7 @@
 
 **resolvectl query epam.com or dig epam.com**
 
-![Determine, which IP address belongs to resource epam.com](https5 "Determine, which IP address belongs to resource epam.com")
+![Determine, which IP address belongs to resource epam.com](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e7b6c8fd0430685d78eae5c9252ab597490bbeb/m1/task6.1/Screenshot_5.png "Determine, which IP address belongs to resource epam.com")
 
 7. Determine the default gateway for your HOST and display routing table.
 
@@ -94,7 +94,7 @@
 
 **My host it is a machine with Windows and i used command: route print** 
 
-![Determine the default gateway for your HOST and display routing table](https6 "Determine the default gateway for your HOST and display routing table")
+![Determine the default gateway for your HOST and display routing table](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e7b6c8fd0430685d78eae5c9252ab597490bbeb/m1/task6.1/Screenshot_6.png "Determine the default gateway for your HOST and display routing table")
 
 8. Trace the route to google.com.
 
@@ -102,4 +102,4 @@
 
 **traceroute -I google.com Explaination: when i use only traceroute most line is empry for traceroute with icmp packets i used -I**
 
-![Trace the route to google.com](https7 "Trace the route to google.com")
+![Trace the route to google.com](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e7b6c8fd0430685d78eae5c9252ab597490bbeb/m1/task6.1/Screenshot_7.png "Trace the route to google.com")

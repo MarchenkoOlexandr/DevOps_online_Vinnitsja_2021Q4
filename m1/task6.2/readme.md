@@ -18,7 +18,7 @@
 
 **(user=legion + group=legion + interface=enp0s8) + dhcp-range=192.168.1.10,192.168.1.50,12h**
 
-** VM2 ether 08:00:27:3c:5a:d9 + dhcp-host=08:00:27:3c:5a:d9,192.168.1.10 + VM3 ether 08:00:27:5a:be:5a dhcp-host=08:00:27:5a:be:5a,192.168.1.20**
+**VM2 ether 08:00:27:3c:5a:d9 + dhcp-host=08:00:27:3c:5a:d9,192.168.1.10 + VM3 ether 08:00:27:5a:be:5a dhcp-host=08:00:27:5a:be:5a,192.168.1.20**
 
 **dhcp-option=1,255.255.255.0 + dhcp-option=3,192.168.1.1 + dhcp-leasefile=/var/lib/misc/dnsmasq.leases + dhcp-option=option:dns-server,192.168.1.1 + dhcp-authoritative**
 
@@ -34,7 +34,7 @@
 	
 **cat /etc/iptables/rules.v4**
 
-**port=53 + listen-address=192.168.1.1 + no-hosts + domain=legion.local + address=/VM1/192.168.1.1
+**port=53 + listen-address=192.168.1.1 + no-hosts + domain=legion.local + address=/VM1/192.168.1.1**
 
 **sudo nano /etc/netplan/01-network-manager-all.yaml**
 ```

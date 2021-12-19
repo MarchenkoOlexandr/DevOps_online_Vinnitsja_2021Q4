@@ -8,6 +8,8 @@
 
 2. Install and configure DHCP server on VM1.(3 ways: using VBoxManage, DNSMASQ and ISC-DHSPSERVER). You should use at least 2 of them.
 
+****
+
 **DNSMASQ**
 
 **sudo apt install net-tools + sudo systemctl disable systemd-resolved + sudo systemctl mask systemd-resolved + sudo systemctl stop systemd-resolved for delete conflict**

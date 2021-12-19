@@ -4,7 +4,7 @@
 
 ****
 
-![three VMs](https1 "three VMs")
+![three VMs](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/a54648872e59f7774ddd8645fd17f1306eb830b1/m1/task6.2/Screenshot_1.png "three VMs")
 
 2. Install and configure DHCP server on VM1.(3 ways: using VBoxManage, DNSMASQ and ISC-DHSPSERVER). You should use at least 2 of them.
 
@@ -86,19 +86,19 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 
 ****
 
-![Check VM2 and VM3 for obtaining network addresses from DHCP server](https2 "Check VM2 and VM3 for obtaining network addresses from DHCP server")
+![Check VM2 and VM3 for obtaining network addresses from DHCP server](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/a54648872e59f7774ddd8645fd17f1306eb830b1/m1/task6.2/Screenshot_2.png "Check VM2 and VM3 for obtaining network addresses from DHCP server")
 
 4. Using existed network for three VMs (from p.1) install and configure DNS server on VM1. (You can use DNSMASQ, BIND9 or something else).
 
 ****
 
-![configure DNS server on VM1](https3 "configure DNS server on VM1")
+![configure DNS server on VM1](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/a54648872e59f7774ddd8645fd17f1306eb830b1/m1/task6.2/Screenshot_3.png "configure DNS server on VM1")
 
 5. Check VM2 and VM3 for gaining access to DNS server (naming services).
 
 ****
 
-![Check VM2 and VM3 for gaining access to DNS server](https4 "Check VM2 and VM3 for gaining access to DNS server")
+![Check VM2 and VM3 for gaining access to DNS server](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/a54648872e59f7774ddd8645fd17f1306eb830b1/m1/task6.2/Screenshot_4.png "Check VM2 and VM3 for gaining access to DNS server")
 
 6. Using the scheme which follows, configure dynamic routing using OSPF protocol.
 
@@ -331,13 +331,11 @@ sudo netplan apply
 
 ```
 
-![Using the scheme which follows, configure dynamic routing using OSPF protocol](https4 "Using the scheme which follows, configure dynamic routing using OSPF protocol")
-
 7. Check results
 
 ****
 
-![Check results](https5 "Check results")
+![Check results](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/a54648872e59f7774ddd8645fd17f1306eb830b1/m1/task6.2/Screenshot_5.png "Check results")
 
 
 

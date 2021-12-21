@@ -304,7 +304,7 @@ network 0.0.0.0/24 area 1
 network 4.4.4.0/24 area 0.0.0.0
 !
 access-list 20 permit 192.168.1.0 0.0.0.255
-access-list 20 permit 4.4.4.0 0.0.0.255
+access-list 20 permit 192.168.0.0 0.0.0.255
 access-list 20 deny any
 !
 line vty

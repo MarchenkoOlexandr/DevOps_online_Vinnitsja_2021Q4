@@ -62,7 +62,7 @@ fi
 
 ****
 
-![RESULT](https1 "RESULT")
+![RESULT](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/64b0b63ac6c6c9ccb5e98003dd4cf418dcb22165/m1/task7.1/Screenshot_1.png "RESULT")
 
 # B. Using Apache log example create a script to answer the following questions:
 
@@ -141,37 +141,37 @@ esac
 
 ```				
 			
-![From which ip were the most requests?](https2 "From which ip were the most requests?")
+![From which ip were the most requests?](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/64b0b63ac6c6c9ccb5e98003dd4cf418dcb22165/m1/task7.1/Screenshot_2.png "From which ip were the most requests?")
 
 2. What is the most requested page?
 
 ****
 
-![What is the most requested page?](https3 "What is the most requested page?")
+![What is the most requested page?](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/64b0b63ac6c6c9ccb5e98003dd4cf418dcb22165/m1/task7.1/Screenshot_3.png "What is the most requested page?")
 
 3. How many requests were there from each ip?
 
 ****
 
-![How many requests were there from each ip?](https4 "How many requests were there from each ip?")
+![How many requests were there from each ip?](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/64b0b63ac6c6c9ccb5e98003dd4cf418dcb22165/m1/task7.1/Screenshot_4.png "How many requests were there from each ip?")
 
 4. What non-existent pages were clients referred to?
 
 ****
 
-![What non-existent pages were clients referred to?](https5 "What non-existent pages were clients referred to?")
+![What non-existent pages were clients referred to?](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/64b0b63ac6c6c9ccb5e98003dd4cf418dcb22165/m1/task7.1/Screenshot_5.png "What non-existent pages were clients referred to?")
 
 5. What time did site get the most requests?
 
 ****
 
-![What time did site get the most requests?](https6 "What time did site get the most requests?")
+![What time did site get the most requests?](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/64b0b63ac6c6c9ccb5e98003dd4cf418dcb22165/m1/task7.1/Screenshot_6.png "What time did site get the most requests?")
 
 6. What search bots have accessed the site? (UA + IP)
 
 ****
 
-![What search bots have accessed the site? (UA + IP)](https7 "What search bots have accessed the site? (UA + IP)")
+![What search bots have accessed the site? (UA + IP)](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/64b0b63ac6c6c9ccb5e98003dd4cf418dcb22165/m1/task7.1/Screenshot_7.png "What search bots have accessed the site? (UA + IP)")
 
 # C. Create a data backup script that takes the following data as parameters:
 
@@ -239,7 +239,7 @@ ls $source_dir > $desttmp_dir/snapshot.tmp
 
 ```
 
-![Create](https8 "Create")
+![Backup script](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/64b0b63ac6c6c9ccb5e98003dd4cf418dcb22165/m1/task7.1/Screenshot_8.png "Backup script")
 
 2. The path to the directory where the copies of the files will be stored. In case of adding new or deleting old files, the script must add a corresponding entry to the log file
 indicating the time, type of operation and file name. [The command to run the script must be added to crontab with a run frequency of one minute]

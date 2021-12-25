@@ -61,7 +61,7 @@ fi
 
 ****
 
-![RESULT](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/3cd953b732974a5058a0e17027d47c56442f09f5/m1/task7.1/Screenshot_1.png "RESULT")
+![RESULT](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/f675b12e3a3474b8fcceeb78d109b165e3c1ad2e/m1/task7.1/Screenshot_1.png "RESULT")
 
 # B. Using Apache log example create a script to answer the following questions:
 

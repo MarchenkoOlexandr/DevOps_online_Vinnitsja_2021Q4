@@ -17,7 +17,7 @@ if [[ "$#" == "0" ]]; then
     echo -e "\033[33m \t key displays a list of open system TCP ports. For example: script --target or script -t"
 fi
 list_IP() {
-    echo -n "Enter you subnet adress in format XXX.XXX.XXX.*.:"
+    echo -n "Enter you subnet adress in format XXX.XXX.XXX.*:"
     read adress
     echo "The IP addresses and symbolic names of all hosts in the current subnet:"
     nmap -sP $adress | awk 'NR % 2 == 0 {print "Hostname:" $5 "    " "IP adress:" $6}' | sed 's/(//g; s/)//g'
@@ -41,7 +41,6 @@ if [ "$1" == "-a" ] || [ "$1" == "--all" ]; then
         read Question1
         case $Question1 in
             y)
-#            echo "Install start test"
                 sudo apt update -y
                 sudo apt upgrade -y
                 sudo apt install nmap -y

@@ -31,7 +31,7 @@ listopen_TCPports() {
     echo -e "\033[34m variant3 \033[33m"
     sudo lsof -nP -iTCP -sTCP:LISTEN | awk 'BEGIN{print "Number of TCP port"} { if (NR >= 2) print $9} END { print "" }' | awk -F: '{print $NF}'
 }
-if [ "$1" == "-t" ] || [ "$1" == "--target" ]; then
+if [ "$1" == "-a" ] || [ "$1" == "--all" ]; then
 #Checking install or no nmap and if not installed its be installed (also can use dpkg -s nmap)
     if [[ -e "/usr/bin/nmap" ]]; then
         echo "Nmap installed"
@@ -48,7 +48,7 @@ if [ "$1" == "-t" ] || [ "$1" == "--target" ]; then
         esac
     fi
     list_IP $2
-elif [ "$1" == "-a" ] || [ "$1" == "--all" ]; then
+elif [ "$1" == "-t" ] || [ "$1" == "--target" ]; then
     listopen_TCPports
 fi
 

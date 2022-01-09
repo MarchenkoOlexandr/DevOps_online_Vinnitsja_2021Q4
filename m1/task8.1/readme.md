@@ -82,7 +82,7 @@ if __name__ == "__main__":
 ```
 ***python3 solv_square_equation.py***
 
-![result](https0 "result")
+![result](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/db36dd3662a2e90216bbaefd8415b42cd90bae5f/m1/task8.1/Screenshot_0.png "result")
 
 
 ***
@@ -121,7 +121,7 @@ if __name__ == "__main__":
 
 ***python3 -m unittest -v UnitTest_solv_square_equation.py***
 
-![result](https01 "result")
+![result](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/db36dd3662a2e90216bbaefd8415b42cd90bae5f/m1/task8.1/Screenshot_01.png "result")
 
 **For this task I installed Jupyter Notebook and made examples from the lecture**
 
@@ -157,14 +157,14 @@ jupyter notebook
 ```
 
 
-![examples from the lecture](https1 "examples from the lecture")
+![examples from the lecture](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/db36dd3662a2e90216bbaefd8415b42cd90bae5f/m1/task8.1/Screenshot_1.png "examples from the lecture")
 
-![examples from the lecture](https2 "examples from the lecture")
+![examples from the lecture](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/db36dd3662a2e90216bbaefd8415b42cd90bae5f/m1/task8.1/Screenshot_2.png "examples from the lecture")
 	
-![examples from the lecture](https3 "examples from the lecture")
+![examples from the lecture](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/db36dd3662a2e90216bbaefd8415b42cd90bae5f/m1/task8.1/Screenshot_3.png "examples from the lecture")
 
-![examples from the lecture](https4 "examples from the lecture")
+![examples from the lecture](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/db36dd3662a2e90216bbaefd8415b42cd90bae5f/m1/task8.1/Screenshot_4.png "examples from the lecture")
 
-![examples from the lecture](https5 "examples from the lecture")
+![examples from the lecture](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/db36dd3662a2e90216bbaefd8415b42cd90bae5f/m1/task8.1/Screenshot_5.png "examples from the lecture")
 
-![examples from the lecture](https6 "examples from the lecture")
+![examples from the lecture](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/db36dd3662a2e90216bbaefd8415b42cd90bae5f/m1/task8.1/Screenshot_6.png "examples from the lecture")

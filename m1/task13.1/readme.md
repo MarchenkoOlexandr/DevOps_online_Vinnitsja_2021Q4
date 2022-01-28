@@ -51,7 +51,7 @@ git@github.com:MarchenkoOlexandr/OSBBbot.git
 */master delete
 
 cat /var/lib/jenkins/secrets/initialAdminPassword
-curl -O http://127.0.0.1:8080/jnlpJars/jenkins-cli.jar && pswd=`sudo cat /var/lib/jenkins/secrets/initialAdminPassword` && echo 'jenkins.model.Jenkins.instance.securityRealm.createAccount("kiykomi", "111")' | sudo java -jar jenkins-cli.jar -auth admin:$pswd -s http://127.0.0.1:8080/ groovy =
+curl -O http://127.0.0.1:8080/jnlpJars/jenkins-cli.jar && pswd=`sudo cat /var/lib/jenkins/secrets/initialAdminPassword` && echo 'jenkins.model.Jenkins.instance.securityRealm.createAccount("login", "password")' | sudo java -jar jenkins-cli.jar -auth admin:$pswd -s http://127.0.0.1:8080/ groovy =
 
 for python scrypt
 chmod ugo+x osbbslovjanskijbot.py
@@ -77,9 +77,6 @@ sudo apt-get update && sudo apt-get install terraform
 sudo apt install openssh-server -y
 
 sudo nano /etc/ssh/sshd_config
-
-export AWS_ACCESS_KEY_ID=	
-export AWS_SECRET_ACCESS_KEY=
 
 #for terraform in my projekt_folder
 

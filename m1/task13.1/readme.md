@@ -13,34 +13,23 @@ create my own vagrant box
 vagrant package --base 'vagrant' --output vagrantbox
 vagrant box add vagrantbox --name 'vagrantbox'
 edit Vagrantfile:
-
-
-
-
-
 then
 vagrant up
 if exit
 vagrant halt
 vagrant destroy
 vagrant box remove vagrantbox
-
-
 for connect with VM from Windows CLI
 vagrant ssh-config
 ssh vagrant@127.0.0.1 -p 2222 -i ...
 org/vagrant ssh default\
 D:\Program Files\VirtualBox\Vagrant>
-
-
-
-
 ```
 
 
 
 
-
+***for instal Jenkins,  I used***
 ```
 sudo apt-get update -y
 sudo apt-get upgrade -y
@@ -93,16 +82,9 @@ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(l
 
 sudo apt-get update && sudo apt-get install terraform
 
-
 sudo apt install openssh-server -y
 
 sudo nano /etc/ssh/sshd_config
-
-
-
-
-
-
 
 export AWS_ACCESS_KEY_ID=	
 export AWS_SECRET_ACCESS_KEY=
@@ -150,38 +132,6 @@ chmod ugo+x файл_скрипта
 
 
 
-git@github.com:MarchenkoOlexandr/OSBBbot.git
-jenkins jobs
-echo "-------------------------------Build Started--------------------------------"
-ls -la
-echo "Build by Jenkins Build# $BUILD_ID" >> version.txt
-cat version.txt
-tar --totals -cvf myproject.tar config.py osbbslovjanskijbot.py version.txt
-tar -tf myproject.tar
-echo "-------------------------------Build Finished-------------------------------"
-
-
-
-echo "-------------------------------Test Started--------------------------------"
-
-echo "-------------------------------Test Finished-------------------------------"
-
-
-
-echo "--------------------Deploy Started--------------------"
-
-ssh ubuntu@3.71.49.162
-
-tar -xvf /home/ubuntu/artefact.tar -C /home/ubuntu/myproject
-
-sleep 40
-
-chmod ugo+x /home/ubuntu/myproject/osbbslovjanskijbot.py
-chmod ugo+x /var/lib/jenkins/workspace/DeployonAWS/osbbslovjanskijbot.py
-
-
-echo "--------------------Deploy Finished--------------------"
-
 
 
 
@@ -192,3 +142,4 @@ tar -xvf /home/ubuntu/artefact.tar -C /var/lib/jenkins/workspace/DeployonAWS
 
 
 jenkins    ALL = NOPASSWD: /path/to/script
+'''

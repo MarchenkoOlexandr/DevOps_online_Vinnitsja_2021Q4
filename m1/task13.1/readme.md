@@ -1,5 +1,5 @@
 
-***for instal Jenkins I used***
+***Vagrant + Virtualbox***
 
 ```
 1. in my Windows I install virtualbox and vagrant
@@ -26,7 +26,7 @@ org/vagrant ssh default\
 D:\Program Files\VirtualBox\Vagrant>
 ```
 
-***for instal Jenkins,  I used***
+***for instal Jenkins, Terraform, Java, Python  I used***
 ```
 sudo apt-get update -y
 sudo apt-get upgrade -y

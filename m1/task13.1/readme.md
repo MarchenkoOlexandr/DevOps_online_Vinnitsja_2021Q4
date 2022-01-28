@@ -26,9 +26,6 @@ org/vagrant ssh default\
 D:\Program Files\VirtualBox\Vagrant>
 ```
 
-
-
-
 ***for instal Jenkins,  I used***
 ```
 sudo apt-get update -y
@@ -53,10 +50,8 @@ webhook for repozitory
 git@github.com:MarchenkoOlexandr/OSBBbot.git
 */master delete
 
-
 cat /var/lib/jenkins/secrets/initialAdminPassword
 curl -O http://127.0.0.1:8080/jnlpJars/jenkins-cli.jar && pswd=`sudo cat /var/lib/jenkins/secrets/initialAdminPassword` && echo 'jenkins.model.Jenkins.instance.securityRealm.createAccount("kiykomi", "111")' | sudo java -jar jenkins-cli.jar -auth admin:$pswd -s http://127.0.0.1:8080/ groovy =
-
 
 for python scrypt
 chmod ugo+x osbbslovjanskijbot.py
@@ -64,10 +59,7 @@ chmod ugo+x osbbslovjanskijbot.py
 sudo apt install python3-pip
 pip install pyTelegramBotAPI
 
-
 ```
-
-
 
 ```
 terraform
@@ -98,10 +90,8 @@ terraform init
 terraform plan
 terraform apply
 
-
 #delete all
 terraform destroy
-
 
 install docker
 sudo apt update
@@ -115,14 +105,11 @@ sudo systemctl enable docker
 #sudo systemctl status docker
 sudo usermod -aG docker $USER
 
-
 #for delete image $docker rmi name_image
-
 
 git commit -am "Comment"
 
 https://plugins.jenkins.io/ssh-agent/
-
 
 sudo apt install python3-pip -y
 
@@ -130,16 +117,7 @@ chmod ugo+x файл_скрипта
 
 @OSBBSlovjanskijbot
 
-
-
-
-
-
-
-
-
 tar -xvf /home/ubuntu/artefact.tar -C /var/lib/jenkins/workspace/DeployonAWS
 
-
 jenkins    ALL = NOPASSWD: /path/to/script
-'''
+```

@@ -1,38 +1,28 @@
 
 
-![Image for project](https)
+![About me](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e8290e09a77830c41801558567da4d2f39520df/m1/task13.1/Screenshot_1.png)
 
-![Image for project](https)
+![Step of my project](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e8290e09a77830c41801558567da4d2f39520df/m1/task13.1/Screenshot_2.png)
 
-![Image for project](https)
+![Structure of project](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e8290e09a77830c41801558567da4d2f39520df/m1/task13.1/Screenshot_3.png)
 
-![Image for project](https)
+![Explanation](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e8290e09a77830c41801558567da4d2f39520df/m1/task13.1/Screenshot_4.png)
 
-![Image for project](https)
+![Creation VM](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e8290e09a77830c41801558567da4d2f39520df/m1/task13.1/Screenshot_5.png)
 
-![Image for project](https)
+![Creation EC2 on AWS with Jenkins](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e8290e09a77830c41801558567da4d2f39520df/m1/task13.1/Screenshot_6.png)
 
-![Image for project](https)
+![Creation EC2 on AWS with Jenkins](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e8290e09a77830c41801558567da4d2f39520df/m1/task13.1/Screenshot_7.png)
 
-![Image for project](https)
+![Simple pipeline on Jenkins](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e8290e09a77830c41801558567da4d2f39520df/m1/task13.1/Screenshot_8.png)
 
-![Image for project](https)
+![Simple pipeline on Jenkins](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e8290e09a77830c41801558567da4d2f39520df/m1/task13.1/Screenshot_9.png)
 
-![Image for project](https)
+![Increasing the level of complexity](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e8290e09a77830c41801558567da4d2f39520df/m1/task13.1/Screenshot_10.png)
 
-![Image for project](https)
+![Result project 1](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e8290e09a77830c41801558567da4d2f39520df/m1/task13.1/Screenshot_11.png)
 
-![Image for project](https)
-
-![Image for project](https)
-
-![Image for project](https)
-
-![Image for project](https)
-
-![Image for project](https)
-
-![Image for project](https)
+![PS Project 2](https://github.com/MarchenkoOlexandr/DevOps_online_Vinnitsja_2021Q4/blob/0e8290e09a77830c41801558567da4d2f39520df/m1/task13.1/Screenshot_12.png)
 
 
 ***Vagrant + Virtualbox***

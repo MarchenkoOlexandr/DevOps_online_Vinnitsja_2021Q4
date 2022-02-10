@@ -1,4 +1,4 @@
-TOKEN = '1099159802:AAE0-9DWC9qiJujX3ComHSR-6qLfaax3xQ8' #bot token from @BotFather
+TOKEN = '' #bot token from @BotFather
 # pip3.7 install *название библиотеки* --user
 # kolodjaz.pp.ua/osbbbot/osbbslovjanskijbot.py
 # https://api.telegram.org/botТОКЕН/setWebhook?url=ВАШ_ДОМЕН

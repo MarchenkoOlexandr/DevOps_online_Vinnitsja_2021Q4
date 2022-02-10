@@ -1,0 +1,41 @@
+
+---
+ - name: Install Docker and Docker-Compose on Web-server and create env
+   hosts: all
+   become: yes
+   become_user: root
+   become_method: sudo
+   
+   tasks:
+
+     - name: cd docker-compose 
+       shell: cd /home/ubuntu/dockerwp/ && docker-compose down
+  
+     - name: Update packages and upgrade
+       apt: 
+         update_cache: true 
+         upgrade: dist 
+         force_apt_get: true
+
+
+     - name: Install Docker
+       apt: name=docker.io state=latest
+
+     - name: Add user to docker group
+       command: "gpasswd -a $USER docker"
+
+     - name: Ensure python3-docker package is installed
+       apt:
+         name: python3-docker
+         state: present
+         update_cache: True
+
+     - name: Install docker-compose
+       remote_user: ubuntu
+       get_url: 
+         url : https://github.com/docker/compose/releases/download/1.25.1-rc1/docker-compose-Linux-x86_64
+         dest: /usr/local/bin/docker-compose
+         mode: 'u+x,g+x'        
+
+
+...

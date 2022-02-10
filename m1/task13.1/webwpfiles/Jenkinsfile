@@ -1,0 +1,146 @@
+pipeline {
+    agent any
+
+    stages {
+/*        stage('Build_Enviroment') {
+			
+            steps {
+			    echo "-------------------------------Build_Enviroment--------------------------------"
+				dir ('terraform') {
+				    withAWS(credentials: 'awscredentials', region: 'eu-central-1') {
+		                    sh 'terraform init'
+		                    sh 'terraform apply --auto-approve'
+				            sh 'sleep 10'
+				    }
+		        echo "-------------------------------Build_Enviroment_Finished-------------------------------"
+				}
+			}
+		}
+*/			
+/*				sh 'sudo apt update'
+				sh 'sudo apt install ansible -y'
+				sh 'ansible --version'
+*/				
+/*		        sshagent(['github_ssh_key']) {
+				    sh '''
+					ssh -i "ubuntuaws_jenkins.pem" ubuntu@ec2-3-65-220-230.eu-central-1.compute.amazonaws.com
+					echo "install docker.................................................................."
+					sudo apt update -y
+                   sudo apt install curl -y
+                    sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+                    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+                    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+                    sudo apt update -y
+                    sudo apt install docker-ce -y
+                    sudo systemctl start docker
+                    sudo systemctl enable docker
+                    sudo docker --version
+					echo "install docker-compose.................................................................."
+					sudo curl -L "https://github.com/docker/compose/releases/download/1.28.6/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+					sudo chmod +x /usr/local/bin/docker-compose
+					docker-compose --version
+                    '''
+		        }				
+*/
+        stage('Configuring Dev Environment with Ansible') {
+            steps {
+			    echo "---------------------Configuring_Dev_Environment_with_Ansible---------------------"
+                dir ('ansible') {
+                    sh 'echo now you are in the'
+                    sh 'pwd'
+					sh 'ls -la'
+                    sh 'ansible-playbook create_env.yml'
+                }
+            
+					
+		echo "-------------------------------Configuring_Dev_Environment_Finished-------------------------------"
+            }
+        }
+		stage('Build') {
+            steps {
+                echo "-------------------------------Build_Started--------------------------------"
+                dir ('ansible') {
+                    sh 'echo now you are in the'
+                    sh 'pwd'
+					sh 'ls -la'
+                    sh 'ansible-playbook build.yml'
+                }
+		echo "-------------------------------Build Finished-------------------------------"
+            }
+        }
+
+        stage('Artefact') {
+            steps {
+                echo "--------------------Creation artefact Started--------------------"
+				    dir ('dockerwp') {
+					sh 'tar --exclude="*.tar" --totals -cf artefactwp.tar *'
+					sh 'tar --exclude="*.tar" --totals -cf artefactwp_$BUILD_NUMBER.tar *'
+//					sh 'tar -tf artefactwp.tar'
+				    }
+		echo "--------------------Creation artefact Finished--------------------"
+            }
+        } 
+		stage('Deploy') {
+            steps {
+                echo "--------------------Deploy Started--------------------"
+		        sshagent(['github_ssh_key']) {
+				    sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/web_wp/dockerwp/artefactwp.tar ubuntu@ec2-3-65-220-230.eu-central-1.compute.amazonaws.com:/home/ubuntu/artefactwp.tar'
+//				sh 'ssh ubuntu@ec2-3-65-220-230.eu-central-1.compute.amazonaws.com'
+	//			sh 'sudo tar -xvf /home/ubuntu/artefactwp.tar -C /home/ubuntu/dockerwp'
+		}
+		        dir ('ansible') {
+                    sh 'ansible-playbook unpack.yml'
+                }
+		echo "--------------------Deploy Finished--------------------"
+            }
+		}
+
+
+		        stage('Test') {
+            steps {
+                echo "-------------------------------Test Started--------------------------------"
+				sh '''
+                    sleep 20
+                    code=`curl -o /dev/null -s -w "%{http_code}\n" http://3.65.220.230`
+					echo $code
+					if [ "$code" = "200" ]
+					then
+					    echo "Test OK"
+						exit 0
+					else
+					    echo "Test Failed"
+						exit 0
+					fi
+				'''
+				
+		echo "-------------------------------Test Finished-------------------------------"
+            }
+        }
+		
+		
+    }
+	post {
+        success { 
+            withCredentials([string(credentialsId: 'botSecret', variable: 'TOKEN'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
+                sh  ("""
+                    curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text='*${env.JOB_NAME}* : POC *Branch*: ${env.GIT_BRANCH} *Build* : OK *Published* = YES'
+                """)
+            }
+        }
+
+        aborted {
+            withCredentials([string(credentialsId: 'botSecret', variable: 'TOKEN'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
+                sh  ("""
+                    curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text='*${env.JOB_NAME}* : POC *Branch*: ${env.GIT_BRANCH} *Build* : `Aborted` *Published* = `Aborted`'
+                """)
+            }
+        }
+        failure {
+            withCredentials([string(credentialsId: 'botSecret', variable: 'TOKEN'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
+                sh  ("""
+                    curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text='*${env.JOB_NAME}* : POC  *Branch*: ${env.GIT_BRANCH} *Build* : `not OK` *Published* = `no`'
+                """)
+            }
+        }
+    }
+}

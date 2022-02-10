@@ -1,0 +1,22 @@
+---
+ - name: Create project  directory and put project in
+   hosts: all
+   become: yes
+   become_user: root
+   become_method: sudo
+   
+   tasks:
+           
+     - name: unpack tar
+       shell: tar -xvf /home/ubuntu/artefactwp.tar -C /home/ubuntu/dockerwp
+   
+     - name: cd docker-compose 
+       shell: cd /home/ubuntu/dockerwp/ && docker-compose up -d
+       
+     - name: create build
+       shell: cd /home/ubuntu/dockerwp/ && docker-compose build
+       
+
+   
+     
+...

@@ -1,0 +1,19 @@
+---
+ - name: Create project  directory and put project in
+   hosts: all
+   become: yes
+   become_user: root
+   become_method: sudo
+   
+   tasks:
+           
+     - name: Creates directory
+       file:
+         path: /home/ubuntu/dockerwp
+         state: directory
+         mode: 0777
+           
+     - name: Change chmod directory
+       shell: sudo chmod -R 777 /home/ubuntu/dockerwp
+     
+...  

@@ -1,0 +1,80 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo "-------------------------------Build_Started--------------------------------"
+		        sh 'ls -la'
+		        sh 'echo "Build by Jenkins Build# $BUILD_ID" >> version.txt'
+		        sh 'cat version.txt'
+		        sh 'tar --totals -cvf myproject.tar config.py osbbslovjanskijbot.py version.txt'
+		        sh 'tar -tf myproject.tar'
+		echo "-------------------------------Build Finished-------------------------------"
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "-------------------------------Test Started--------------------------------"
+				sh '''                
+                if grep lambda osbbslovjanskijbot.py
+                then
+                    echo "Test ok"
+                else
+                    echo "Test failed"
+                    exit 1
+                fi
+				'''
+		echo "-------------------------------Test Finished-------------------------------"
+            }
+        }
+        stage('Artefact') {
+            steps {
+                echo "--------------------Creation artefact Started--------------------"
+		sshagent(['github_ssh_key']) {
+				sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/fromGitHubtoDeploy/myproject.tar ubuntu@ec2-3-68-220-236.eu-central-1.compute.amazonaws.com:/home/ubuntu/devops/artefact.tar'
+				sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/fromGitHubtoDeploy/myproject.tar ubuntu@ec2-3-68-220-236.eu-central-1.compute.amazonaws.com:/home/ubuntu/devops/artefact_$BUILD_NUMBER.tar'
+		}
+		
+		echo "--------------------Creation artefact Finished--------------------"
+            }
+        }
+		stage('Deploy') {
+            steps {
+                echo "--------------------Deploy Started--------------------"
+		sshagent(['github_ssh_key']) {
+				sh 'ssh ubuntu@ec2-3-68-220-236.eu-central-1.compute.amazonaws.com'
+				sh 'sudo tar -xvf /home/ubuntu/devops/artefact.tar -C /home/ubuntu/myproject'
+				sh 'sudo chmod ugo+x /home/ubuntu/myproject/osbbslovjanskijbot.py'
+				sh 'sudo systemctl restart myproject.service'
+		}
+		echo "--------------------Deploy Finished--------------------"
+            }
+        }
+    }
+	
+	post {
+      success { 
+        withCredentials([string(credentialsId: 'botSecret', variable: 'TOKEN'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
+        sh  ("""
+            curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text='*${env.JOB_NAME}* : POC *Branch*: ${env.GIT_BRANCH} *Build* : OK *Published* = YES'
+        """)
+        }
+      }
+
+      aborted {
+        withCredentials([string(credentialsId: 'botSecret', variable: 'TOKEN'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
+        sh  ("""
+            curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text='*${env.JOB_NAME}* : POC *Branch*: ${env.GIT_BRANCH} *Build* : `Aborted` *Published* = `Aborted`'
+        """)
+        }
+      }
+      failure {
+        withCredentials([string(credentialsId: 'botSecret', variable: 'TOKEN'), string(credentialsId: 'chatId', variable: 'CHAT_ID')]) {
+        sh  ("""
+            curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode=markdown -d text='*${env.JOB_NAME}* : POC  *Branch*: ${env.GIT_BRANCH} *Build* : `not OK` *Published* = `no`'
+        """)
+        }
+      }
+    }
+}
